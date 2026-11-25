@@ -1,0 +1,80 @@
+
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #202b3c;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* Improve overall dashboard sizing */
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Main dashboard content */
+.main-content,
+.dashboard-content {
+  width: 100%;
+  max-width: none;
+  padding: 28px 32px;
+  box-sizing: border-box;
+}
+
+/* Dashboard heading */
+.dashboard-content h1,
+.main-content h1 {
+  font-size: 28px;
+}
+
+/* Welcome banner */
+.welcome-banner {
+  min-height: 150px;
+  padding: 30px;
+}
+
+/* CRM module cards */
+.module-card {
+  min-height: 150px;
+  padding: 22px;
+}
+
+/* Module card text */
+.module-card h3 {
+  font-size: 17px;
+}
+
+.module-card p {
+  font-size: 14px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .main-content,
+  .dashboard-content {
+    padding: 18px;
+  }
+}

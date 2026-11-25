@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Morgan Admin",
+      "email": "admin@crm.com",
+      "role": "Administrator"
+    },
+    {
+      "id": "u2",
+      "name": "Riya Sales",
+      "email": "riya@crm.com",
+      "role": "Sales Representative"
+    },
+    {
+      "id": "u3",
+      "name": "Daniel Manager",
+      "email": "daniel@crm.com",
+      "role": "Sales Manager"
+    },
+    {
+      "id": "u4",
+      "name": "Sam Support",
+      "email": "sam@crm.com",
+      "role": "Support Agent"
+    }
+  ],
+  "leads": [
+    {
+      "id": "L001",
+      "FirstName": "suganesh",
+      "LastName": "Kumar",
+      "Company": "Tech Solutions",
+      "Email": "arun@example.com",
+      "Phone": "9876543210",
+      "Status": "New",
+      "LeadSource": "Web",
+      "Rating": "Hot",
+      "Industry": "Technology"
+    },
+    {
+      "id": "L002",
+      "FirstName": "Priya",
+      "LastName": "Sharma",
+      "Company": "Global Systems",
+      "Email": "priya@example.com",
+      "Phone": "9876543211",
+      "Status": "Working",
+      "LeadSource": "Partner Referral",
+      "Rating": "Warm",
+      "Industry": "IT"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "A001",
+      "Name": "Tech Solutions",
+      "Industry": "Technology",
+      "Website": "https://techsolutions.com",
+      "Phone": "9876543210",
+      "AnnualRevenue": 5000000,
+      "BillingCity": "Bangalore"
+    },
+    {
+      "id": "A002",
+      "Name": "Global Systems",
+      "Industry": "Finance",
+      "Website": "https://globalsystems.com",
+      "Phone": "9876543211",
+      "AnnualRevenue": 7500000,
+      "BillingCity": "Chennai"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "C001",
+      "FirstName": "Arun",
+      "LastName": "Kumar",
+      "Email": "arun@example.com",
+      "Phone": "9876543210",
+      "Title": "Manager",
+      "AccountId": "A001"
+    },
+    {
+      "id": "C002",
+      "FirstName": "Priya",
+      "LastName": "Sharma",
+      "Email": "priya@example.com",
+      "Phone": "9876543211",
+      "Title": "Director",
+      "AccountId": "A002"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "O001",
+      "Name": "Website Development",
+      "AccountId": "A001",
+      "StageName": "Proposal",
+      "Amount": 250000,
+      "CloseDate": "2026-12-20",
+      "Probability": 70
+    },
+    {
+      "id": "O002",
+      "Name": "Cloud Migration",
+      "AccountId": "A002",
+      "StageName": "Qualification",
+      "Amount": 450000,
+      "CloseDate": "2027-01-15",
+      "Probability": 40
+    }
+  ],
+  "cases": [
+    {
+      "id": "CS001",
+      "Subject": "Login issue",
+      "Description": "Customer cannot log in.",
+      "AccountId": "A001",
+      "ContactId": "C001",
+      "Status": "New",
+      "Priority": "High",
+      "Origin": "Email"
+    },
+    {
+      "id": "CS002",
+      "Subject": "Payment issue",
+      "Description": "Payment confirmation not received.",
+      "AccountId": "A002",
+      "ContactId": "C002",
+      "Status": "Working",
+      "Priority": "Medium",
+      "Origin": "Phone"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T001",
+      "Subject": "Follow up ",
+      "Status": "In Progress",
+      "Priority": "Low",
+      "ActivityDate": "2026-12-01",
+      "RelatedToId": "A004"
+    },
+    {
+      "id": "T002",
+      "Subject": "Prepare sales proposal",
+      "Status": "Not Started",
+      "Priority": "Normal",
+      "ActivityDate": "2026-12-05",
+      "RelatedToId": "O001"
+    },
+    {
+      "Subject": "complete the ticket",
+      "Status": "In Progress",
+      "Priority": "Low",
+      "ActivityDate": "2026-11-05",
+      "RelatedToId": "123",
+      "id": "yXPHsga9RsQ"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
